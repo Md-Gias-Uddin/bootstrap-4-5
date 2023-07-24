@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Sidebar with Header Menu</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS for the sidebar and header menu -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+
+    /* Updated sidebar color */
+    #sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding-top: 60px;
+      background-color: #007bff; /* Blue background color for the sidebar */
+      color: #fff; /* Text color for the sidebar items */
+    }
+
+    #sidebar .list-group-item {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #sidebar .list-group-item:last-child {
+      border-bottom: none;
+    }
+
+    #sidebar .list-group-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #sidebar .list-group-item.active {
+      background-color: #0056b3; /* Active item background color */
+      font-weight: bold;
+    }
+
+    #sidebar .list-group-item i {
+      margin-right: 10px;
+    }
+
+    /* Updated header color */
+    .navbar {
+      background-color: #343a40; /* Dark background color for the header */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff; /* Text color for the header links */
+    }
+
+    .navbar-brand:hover,
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa; /* Hover text color for the header links */
+    }
+
+    /* Additional styles for the main content area */
+    #content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    /* Styling for the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    th {
+      background-color: #343a40;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="fas fa-info-circle"></i> About
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="fas fa-envelope"></i> Contact
+      </a>
+      <!-- Add more menu items as needed -->
+    </div>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Your Logo</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <!-- Add more header menu items as needed -->
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="content">
+    <h1>Welcome to Our Website</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut malesuada elit. Vestibulum vehicula aliquet
+      lacus, in tincidunt ex laoreet vitae.
+    </p>
+
+    <h2>Our Services</h2>
+    <p>
+      Curabitur blandit ligula quis leo bibendum, nec scelerisque lectus congue. Vivamus luctus fringilla dui vel
+      tincidunt. Fusce eu ullamcorper nunc.
+    </p>
+
+    <!-- Sample Table -->
+    <h2>Sample Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>30</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>25</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>Mike Johnson</td>
+          <td>35</td>
+          <td>mike@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Link Bootstrap JS, jQuery, and Font Awesome -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
